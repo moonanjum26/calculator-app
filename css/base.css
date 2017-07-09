@@ -1,0 +1,31 @@
+/*changes the height and width of the container*/
+.container-fluid {
+    height: 100%;   /*completely occupy the height of the container*/
+    width:100%;     /*completely occupy the width of the container*/
+    width:100%;
+  }
+
+/*changes the background color, text-alignment and font-size of the display textbox box*/
+#display{
+	
+	background: #ff3300;  /*sets the background color to orange*/
+	text-align: right;    /*sets the font-size to 20 pixels*/
+	font-size:20px;       /*sets the font-size to 20 pixels*/
+}
+
+/*changes the background color, text-alignment and font-size of the result textbox box*/
+#result{
+	
+	background: #ff3300;   /*sets the background color to orange*/
+	font-size:20px;         /*sets the font-size to 20 pixels*/
+	text-align: right;    /*align the text to center*/
+}
+
+/*changes the background color, text-alignment and font-size of the button*/
+#button{
+	
+	background: #ff3300; /*sets the background color to orange*/
+	font-size:20px;     /*sets the font-size to 20 pixels*/
+	text-align: center;  /*align the text to center*/
+}
+

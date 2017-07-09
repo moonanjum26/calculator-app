@@ -1,0 +1,103 @@
+<html>
+<head>
+
+<!-- includes the bootstrap stylesheets to enhance the view  -->
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/base.css" />
+
+<!-- includes the bootstrap javascript files to enhance the view  -->
+
+<script type='text/javascript' script src="js/main.js"></script>
+<script type='text/javascript' script src="js/bootstrap.js"></script>
+<script type='text/javascript' script src="js/bootstrap.min.js"></script>
+
+<!-- flexible to mobile, tablet and laptop devices-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>   
+
+<body>   
+
+<!-- container fluid covers the complete width of the screen -->
+
+<div class="container-fluid">  
+
+<!-- creating the first row in the container -->
+    <div class="row">
+<!-- flexible to mobile, tablet and laptop devices--> 
+         <div class="col-xs-12">             
+<!-- textbox for displaying the result -->          
+			  <input type="text"  class="col-xs-12" id="display" > 
+		 </div> <!-- closes the column -->
+    </div>  <!-- closes the row -->
+<!-- creating the second row in the container --> 
+    <div class="row">
+<!-- flexible to mobile, tablet and laptop devices--> 
+		 <div class="col-xs-12">
+<!-- textbox for displaying the complete mathematical expression -->		 
+			<input type="text"  class="col-xs-12" id="result" > 
+		 </div>   <!-- closes the column -->
+	</div>  <!-- closes the row -->
+
+	<div class="row">      <!-- creating the third row in the container -->                 
+		   <div class="col-xs-12">
+<!-- divides the row into 4 columns of equal sizes -->
+				<input type="button" class="col-xs-3" id="button" value="C" OnClick='Clear()' /> <!-- button to clear the expressions and result -->
+				<input type="button" class="col-xs-3" id="button" value="(" OnClick='Numbers(value)' /> <!-- button to enter ( -->
+				<input type="button" class="col-xs-3" id="button" value=")" OnClick='Numbers(value)' /> <!-- button to enter ) -->
+				<input type="button" class="col-xs-3" id="button" value="=" OnClick='Evaluate()' /> <!-- button to evaluate the expression -->
+
+		   </div>  <!-- closes the column -->
+	</div>  <!-- closes the row -->
+
+	<div class="row">  <!-- creating the fourth row in the container -->
+			<div class="col-xs-12"> 
+<!-- divides the row into 4 columns of equal sizes -->
+
+				<input type="button" class="col-xs-3" id="button" value="7" OnClick='Numbers(value)' /> <!-- button to enter 7 -->
+				<input type="button" class="col-xs-3" id="button" value="8" OnClick='Numbers(value)' /> <!-- button to enter 8 -->
+				<input type="button" class="col-xs-3" id="button" value="9" OnClick='Numbers(value)' /> <!-- button to enter 9 -->
+				<input type="button" class="col-xs-3" id="button" value="/" OnClick='Numbers(value)' /> <!-- button to calculate division -->
+
+			</div>   <!-- closes the column -->
+	</div>           <!-- closes the row -->
+	<div class="row">   <!-- creating the fifth row in the container -->
+			 <div class="col-xs-12">
+<!-- divides the row into 4 columns of equal sizes -->
+
+				<input type="button" class="col-xs-3" id="button" value="4" OnClick='Numbers(value)' />  <!-- button to enter 4-->
+				<input type="button" class="col-xs-3" id="button" value="5" OnClick='Numbers(value)' />  <!-- button to enter 5 -->
+				<input type="button" class="col-xs-3" id="button" value="6" OnClick='Numbers(value)' />  <!-- button to enter 6 -->
+				<input type="button" class="col-xs-3" id="button" value="*" OnClick='Numbers(value)' />  <!-- button to calculate multiplication-->
+
+			</div>   <!-- closes the column -->   
+	</div>       <!-- closes the row -->
+
+	<div class="row">   <!-- creating the sixth row in the container -->
+			 <div class="col-xs-12">  
+<!-- divides the row into 4 columns of equal sizes -->
+
+				<input type="button" class="col-xs-3" id="button" value="1" OnClick='Numbers(value)' />  <!-- button to enter 1 -->
+				<input type="button" class="col-xs-3" id="button" value="2" OnClick='Numbers(value)' />  <!-- button to enter 2 -->
+				<input type="button" class="col-xs-3" id="button" value="3" OnClick='Numbers(value)' />  <!-- button to enter 3 -->
+				<input type="button" class="col-xs-3" id="button" value="-" OnClick='Numbers(value)' />  <!-- button to calculate subtraction - -->
+
+			</div>   <!-- closes the column -->
+	</div>            <!-- closes the row -->
+
+	<div class="row">    <!-- creating the seventh row in the container -->
+			 <div class="col-xs-12">  
+<!-- divides the row into 4 columns of equal sizes -->
+
+				<input type="button" class="col-xs-3" id="button" value="0" OnClick='Numbers(value)' />  <!-- button to enter 0 -->
+				<input type="button" class="col-xs-3" id="button" value="." OnClick='Numbers(value)' />  <!-- button to enter . -->
+				<input type="button" class="col-xs-3" id="button" value="xn" OnClick='Power()' />  <!-- button to calculate power of 2 of any number -->
+				<input type="button" class="col-xs-3" id="button" value="+" OnClick='Numbers(value)' />  <!-- button to calculate addition -->
+
+			</div>   <!-- closes the column -->
+	</div>            <!-- closes the row -->
+</div>      <!-- closes the container -->
+</body>   
+</html>
